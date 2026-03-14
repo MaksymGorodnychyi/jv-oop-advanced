@@ -1,8 +1,9 @@
-public class Square extends Figure {
+public class Square implements Figure {
     private double side;
+    private String color;
 
     public Square(String color, double side) {
-        super(color);
+        this.color = color;
         this.side = side;
     }
 
@@ -13,6 +14,6 @@ public class Square extends Figure {
 
     @Override
     public void draw() {
-        System.out.println("Figure: Square, color: " + getColor() + ", side: " + side + ", area: " + getArea());
+        System.out.println("Figure: Square, color: " + color + ", side: " + side + ", area: " + getArea());
     }
 }

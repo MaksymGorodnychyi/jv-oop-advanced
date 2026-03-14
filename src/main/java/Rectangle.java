@@ -1,9 +1,10 @@
-public class Rectangle extends Figure {
+public class Rectangle implements Figure {
     private double width;
     private double height;
+    private String color;
 
     public Rectangle(String color, double width, double height) {
-        super(color);
+        this.color = color;
         this.width = width;
         this.height = height;
     }
@@ -15,6 +16,6 @@ public class Rectangle extends Figure {
 
     @Override
     public void draw() {
-        System.out.println("Figure: Rectangle, color: " + getColor() + ", width: " + width + ", height: " + height + ", area: " + getArea());
+        System.out.println("Figure: Rectangle, color: " + color + ", width: " + width + ", height: " + height + ", area: " + getArea());
     }
 }

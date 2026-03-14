@@ -1,17 +1,5 @@
-public abstract class Figure {
-    private String color;
+public interface Figure {
+    double getArea();
 
-    public Figure(String color) {
-        this.color = color;
-
-    }
-
-    public String getColor() {
-        return color;
-
-    }
-
-    public abstract double getArea();
-
-    public abstract void draw();
+    void draw();
 }
