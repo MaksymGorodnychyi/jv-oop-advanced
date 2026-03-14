@@ -1,5 +1,2 @@
-public interface Figure {
-    double getArea();
-
-    void draw();
+public interface Figure extends AreaCalculator, Drawable {
 }

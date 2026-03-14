@@ -1,13 +1,15 @@
 import java.util.Random;
 
 public class FigureSupplier {
-    private final Random random = new Random();
-    private final ColorSupplier colorSupplier = new ColorSupplier();
     private static final int FIGURE_TYPES_COUNT = 5;
     private static final int MAX_RANDOM_SIZE = 5;
     private static final int MIN_RANDOM_SIZE = 1;
     private static final String DEFAULT_COLOR = "White";
     private static final int DEFAULT_RADIUS = 10;
+
+    private final Random random = new Random();
+    private final ColorSupplier colorSupplier = new ColorSupplier();
+
 
     public Figure getRandomFigure() {
         int index = random.nextInt(FIGURE_TYPES_COUNT);

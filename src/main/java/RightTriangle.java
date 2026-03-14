@@ -16,6 +16,9 @@ public class RightTriangle implements Figure {
 
     @Override
     public void draw() {
-        System.out.println("Figure: RightTriangle, color: " + color + ", firstLeg: " + firstLeg + ", secondLeg: " + secondLeg + ", area: " + getArea());
+        System.out.println("Figure: rightTriangle, area: " + getArea() + " sq. units"
+                + ", firstLeg: " + firstLeg + " units"
+                + ", secondLeg: " + secondLeg + " units"
+                + ", color: " + color);
     }
 }
